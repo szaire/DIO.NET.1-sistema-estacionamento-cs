@@ -15,3 +15,7 @@ As principais característcas do projeto são:
     * Encerrar a sessão
 
 ## Fluxograma
+![Fluxograma do Projeto do Desafio 01](/Sistema/assets/readme/Desafio%201%20-%20Fluxograma.jpg "Fluxograma do Projeto do Desafio 01")
+
+## Diagrama de Classes
+![Diagrama de Classes do Projeto do Desafio 01](/Sistema/assets/readme/Desafio%201%20-%20Diagrama%20de%20Classes.jpg "Diagrama de Classes do Projeto do Desafio 01")
