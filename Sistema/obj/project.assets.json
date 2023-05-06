@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\samue\\.nuget\\packages\\": {}
+    "/home/samueo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DIOprojects\\Desafios\\dotnet-developer\\DIO.NET.1-sistema-estacionamento-cs\\Sistema\\Sistema.csproj",
+      "projectUniqueName": "/home/samueo/DIOprojects/desafios/DIO.NET.1-sistema-estacionamento-cs/Sistema/Sistema.csproj",
       "projectName": "Sistema",
-      "projectPath": "C:\\DIOprojects\\Desafios\\dotnet-developer\\DIO.NET.1-sistema-estacionamento-cs\\Sistema\\Sistema.csproj",
-      "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-      "outputPath": "C:\\DIOprojects\\Desafios\\dotnet-developer\\DIO.NET.1-sistema-estacionamento-cs\\Sistema\\obj\\",
+      "projectPath": "/home/samueo/DIOprojects/desafios/DIO.NET.1-sistema-estacionamento-cs/Sistema/Sistema.csproj",
+      "packagesPath": "/home/samueo/.nuget/packages/",
+      "outputPath": "/home/samueo/DIOprojects/desafios/DIO.NET.1-sistema-estacionamento-cs/Sistema/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/samueo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -49,8 +49,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -59,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.116/RuntimeIdentifierGraph.json"
       }
     }
   }

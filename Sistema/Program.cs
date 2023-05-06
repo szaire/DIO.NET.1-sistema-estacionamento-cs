@@ -1,12 +1,65 @@
-﻿internal class Program
+﻿using Sistema.Models;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
         // TODO: Entender a proposta do desafio (ok)
         // TODO: Modelar o Diagrama de Classes (ok)
         // TODO: Modelar o fluxograma do sistema (ok)
-        // TODO: Criar os pseudocódigos dos métodos
-        // TODO: Implementar em C#
-        Console.WriteLine("Hello, World!");
+        // TODO: Criar os pseudocódigos dos métodos (ignorei)
+        // TODO: Implementar em C# (já to fazendo XD)
+        Estacionamento estacionamento = new Estacionamento();
+        short option;
+        bool exibirMenu = true;
+
+        Console.WriteLine("Seja bem vindo ao sistema de estacionamento de szaire 😎!");
+        Console.Write("[💸] Digite o preço inicial: ");
+        estacionamento.PrecoInicial = Convert.ToDecimal(Console.ReadLine());
+        Console.Write("[⏰] Digite o preço por hora: ");
+        estacionamento.PrecoHora = Convert.ToDecimal(Console.ReadLine());
+        PauseAndClearConsole();
+
+        do
+        {
+            // Menu Interativo
+            Console.WriteLine("Digite a sua opção:");
+            Console.WriteLine("1[🚗] - Cadastrar veículo");
+            Console.WriteLine("2[⛔] - Remover veículo");
+            Console.WriteLine("3[📝] - Listar veículo");
+            Console.WriteLine("4[❌] - Encerrar");
+            option = (short) Convert.ToInt32(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    estacionamento.CadastrarVeiculo();
+                    break;
+                case 2:
+                    estacionamento.RemoverVeiculo();
+                    break;
+                case 3:
+                    estacionamento.ListarVeiculos();
+                    break;
+                case 4:
+                    Console.WriteLine("\nObrigado por utilizar o meu sistema!🥳😄\ncredits: github::szaire\n");
+                    exibirMenu = false;
+                    break;
+                default:
+                    Console.WriteLine("🚫Valor informado é inválido!🚫");
+                    break;
+            }
+            PauseAndClearConsole();
+
+        } while (exibirMenu);
+    }
+
+    public static void PauseAndClearConsole()
+    {
+        Console.Write("Pressione qualquer tecla...");
+        Console.ReadKey();
+        Console.Clear();        
     }
 }
+
+// Coded by github::szaire
