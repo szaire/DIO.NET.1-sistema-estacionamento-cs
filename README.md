@@ -13,3 +13,5 @@ As principais característcas do projeto são:
     * Remover Veículo
     * Listar Veículos
     * Encerrar a sessão
+
+## Fluxograma
