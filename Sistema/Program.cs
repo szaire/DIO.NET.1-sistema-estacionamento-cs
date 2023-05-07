@@ -6,11 +6,11 @@ internal class Program
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         
-        // TODO: Entender a proposta do desafio (ok)
-        // TODO: Modelar o Diagrama de Classes (ok)
-        // TODO: Modelar o fluxograma do sistema (ok)
-        // TODO: Criar os pseudocódigos dos métodos (ignored)
-        // TODO: Implementar em C# (ok)
+        // Entender a proposta do desafio (ok)
+        // Modelar o Diagrama de Classes (ok)
+        // Modelar o fluxograma do sistema (ok)
+        // Criar os pseudocódigos dos métodos (ignored)
+        // Implementar em C# (ok)
 
         short option;
         bool exibirMenu = true;
@@ -66,4 +66,4 @@ internal class Program
 }
 
 // Coded by github::szaire
-// Version: 1.0
+// Version: 1.1
