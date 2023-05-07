@@ -29,6 +29,7 @@ namespace Sistema.Models
             if (!this.CarrosEstacionados.Any())
             {
                 Console.WriteLine("🚫Nenhum carro foi adicionado ainda!🚫");
+                return;
             }
 
             Console.Write("Digite a placa do veículo para remover: ");

@@ -4,6 +4,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+        
         // TODO: Entender a proposta do desafio (ok)
         // TODO: Modelar o Diagrama de Classes (ok)
         // TODO: Modelar o fluxograma do sistema (ok)
