@@ -11,6 +11,12 @@ namespace Sistema.Models
         public decimal PrecoInicial { get; set; }
         public decimal PrecoHora { get; set; }
 
+        public Estacionamento(decimal precoInicial, decimal precoHora)
+        {
+            this.PrecoInicial = precoInicial;
+            this.PrecoHora = precoHora;
+        }
+
         public void CadastrarVeiculo()
         {
             Console.Write("Digite a placa do veículo para estacionar: ");
@@ -23,7 +29,6 @@ namespace Sistema.Models
             if (!this.CarrosEstacionados.Any())
             {
                 Console.WriteLine("🚫Nenhum carro foi adicionado ainda!🚫");
-                return;
             }
 
             Console.Write("Digite a placa do veículo para remover: ");
@@ -38,7 +43,7 @@ namespace Sistema.Models
                 this.CarrosEstacionados.Remove(placa);
             }
             else {
-                Console.WriteLine("🚫Digite uma placa válida!🚫");
+                Console.WriteLine("🚫Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente.🚫");
             }
         }
 
@@ -53,7 +58,7 @@ namespace Sistema.Models
                 }
             }
             else {
-                Console.WriteLine("Não há nenhum carro estacionado...");
+                Console.WriteLine("Não há veículos estacionados...");
             }
         }
 
@@ -64,7 +69,7 @@ namespace Sistema.Models
         /// <returns>Valor a ser pago pelo usuário</returns>
         private decimal CalcularValorFinal(int tempo)
         {
-            return this.PrecoInicial + (this.PrecoHora * (tempo - 1));
+            return this.PrecoInicial + (this.PrecoHora * tempo);
         }
     }
 }

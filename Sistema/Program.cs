@@ -7,17 +7,18 @@ internal class Program
         // TODO: Entender a proposta do desafio (ok)
         // TODO: Modelar o Diagrama de Classes (ok)
         // TODO: Modelar o fluxograma do sistema (ok)
-        // TODO: Criar os pseudocódigos dos métodos (ignorei)
-        // TODO: Implementar em C# (já to fazendo XD)
-        Estacionamento estacionamento = new Estacionamento();
+        // TODO: Criar os pseudocódigos dos métodos (ignored)
+        // TODO: Implementar em C# (ok)
+
         short option;
         bool exibirMenu = true;
 
         Console.WriteLine("Seja bem vindo ao sistema de estacionamento de szaire 😎!");
         Console.Write("[💸] Digite o preço inicial: ");
-        estacionamento.PrecoInicial = Convert.ToDecimal(Console.ReadLine());
+        decimal precoInicial = Convert.ToDecimal(Console.ReadLine());
         Console.Write("[⏰] Digite o preço por hora: ");
-        estacionamento.PrecoHora = Convert.ToDecimal(Console.ReadLine());
+        decimal precoHora = Convert.ToDecimal(Console.ReadLine());
+        Estacionamento estacionamento = new Estacionamento(precoInicial, precoHora);
         PauseAndClearConsole();
 
         do
@@ -63,3 +64,4 @@ internal class Program
 }
 
 // Coded by github::szaire
+// Version: 1.0
